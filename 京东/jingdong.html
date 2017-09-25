@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东</title>
+		<link rel="stylesheet" type="text/css" href="css/resert.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style-01.css"/>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/j_index.js"></script>
+		<script src="js/J_tools.js"></script>
+<!--		<script src="js/move.js"></script>-->
+	</head>
+	<body>
+		<!--广告-->
+		<div id="advert-wapper">
+			<div class="advert">
+				<i class="iconfont advert_del" id="advert_del">&#xe614;</i>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div id="J_sidebar">
+			<div class="J-tabs">
+				<em class="tab-text">
+					  京东会员
+				</em> 
+				<i class="tab-ico"></i>
+				
+			</div>
+			<div class="J-tabs">
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					 购物车
+				</em>
+			</div>
+			<div class="J-tabs">
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					我的关注
+				</em>
+			</div>
+			<div class="J-tabs">
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					我的足迹
+				</em>
+			</div>
+			<div class="J-tabs">
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					 我的消息 
+				</em>
+			</div>
+			<div class="J-tabs"	> 
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					咨询JIMI
+				</em>
+			</div>                     
+		</div>
+		
+		<!--置顶 反馈-->
+		
+		<div id="J_stick">
+			<div class="J-tabs stick">
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					置顶
+				</em>
+			</div>
+			<div class="J-tabs"	> 
+				<i class="tab-ico"></i>
+				<em class="tab-text">
+					反馈
+				</em>
+			</div>  
+		</div>
+		
+		
+		<!--头部-->
+		<div id="w-wapper">
+			<div class="w">
+				<ul class="location">
+					<li>
+						<div id="location-city-divs" class="location-city-divs">
+							<i class="iconfont locat">&#xe6fc;</i>
+							<span id="location-city">
+								北京
+							</span>
+							
+						</div>
+						<ul id="location-city-list">
+								<li>
+									<a href="#">北京</a>
+								</li>
+								<li>
+									<a href="#">上海</a>
+								</li>
+								<li>
+									<a href="#">天津</a>
+								</li>
+								<li>
+									<a href="#">河南</a>
+								</li>
+								<li>
+									<a href="#">重庆</a>
+								</li>
+								<li>
+									<a href="#">山西</a>
+								</li>
+								<li>
+									<a href="#">辽宁</a>
+								</li>
+								<li>
+									<a href="#">河北</a>
+								</li>
+								<li>
+									<a href="#">吉林</a>
+								</li>
+								<li>
+									<a href="#">黑龙江</a>
+								</li>
+								<li>
+									<a href="#">内蒙古</a>
+								</li>
+								<li>
+									<a href="#">江苏</a>
+								</li>
+								<li>
+									<a href="#">山东</a>
+								</li>
+								<li>
+									<a href="#">安徽</a>
+								</li>
+								<li>
+									<a href="#">浙江</a>
+								</li>
+								<li>
+									<a href="#">福建</a>
+								</li>
+								<li>
+									<a href="#">湖北</a>
+								</li>
+								<li>
+									<a href="#">湖南</a>
+								</li>
+								<li>
+									<a href="#">广东</a>
+								</li>
+								<li>
+									<a href="#">广西</a>
+								</li>
+								<li>
+									<a href="#">江西</a>
+								</li>
+								<li>
+									<a href="#">西川</a>
+								</li>
+								<li>
+									<a href="#">海南</a>
+								</li>
+								<li>
+									<a href="#">贵州</a>
+								</li>
+								<li>
+									<a href="#">云南</a>
+								</li>
+								<li>
+									<a href="#">西藏</a>
+								</li>
+								<li>
+									<a href="#">陕西</a>
+								</li>
+								<li>
+									<a href="#">甘肃</a>
+								</li>
+								<li>
+									<a href="#">青海</a>
+								</li>
+								<li>
+									<a href="#">宁夏</a>
+								</li>
+								<li>
+									<a href="#">新疆</a>
+								</li>
+								<li>
+									<a href="#">港澳</a>
+								</li>
+								<li>
+									<a href="#">台湾</a>
+								</li>
+								<li>
+									<a href="#">钓鱼岛</a>
+								</li>
+								<li>
+									<a href="#">海外</a>
+								</li>
+							</ul>
+					</li>
+				</ul>
+				<ul class="userData">
+					<li>
+						<a href="#" id="hello">你好，请登录</a>
+						<a href="#" id="free_regist">免费注册</a>
+						<span id="spacer"></span>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+						<span id="spacer"></span>
+					</li>
+					<li id="myjd_list">
+						<a href="#">我的京东</a>
+						<i class="iconfont">&#xe610;</i>
+						<span id="spacer"></span>
+						<div id="my-jd">
+							<ul class="my-jd-list1">
+								<li>
+									<a href="#">待处理订单</a>
+								</li>
+								<li>
+									<a href="#">消息</a>
+								</li>
+								<li>
+									<a href="#">返修退换货</a>
+								</li>
+								<li>
+									<a href="#">我的问答</a>
+								</li>
+								<li>
+									<a href="#">降价商品</a>
+								</li>
+								<li>
+									<a href="#">我的关注</a>
+								</li>								
+							</ul>
+							<ul class="my-jd-list2">
+								<li>
+									<a href="#">我的京豆</a>
+								</li>
+								<li>
+									<a href="#">我的优惠券</a>
+								</li>
+								<li>
+									<a href="#">我的白条</a>
+								</li>
+								<li>
+									<a href="#">我的理财</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">京东会员</a>
+						<span id="spacer"></span>
+					</li>
+					<li>
+						<a href="#">企业采购</a>
+						<span id="spacer"></span>
+					</li>
+					<li id="jd-service">
+						<a href="#">客户服务</a>
+						<i class="iconfont">&#xe610;</i>
+						<span id="spacer"></span>
+						<div id="account-service">
+							<ul class="account-service-list1">
+								<li>
+									<a href="#">客户</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+								<li>
+									<a href="#">售后服务</a>
+								</li>
+								<li>
+									<a href="#">在线客服</a>
+								</li>
+								<li>
+									<a href="#">意见建议</a>
+								</li>
+								<li>
+									<a href="#">电话客服</a>
+								</li>
+								<li>
+									<a href="#">客服邮箱</a>
+								</li>
+								<li>
+									<a href="#">金融咨询</a>
+								</li>
+								<li>
+									<a href="#">售全球客服</a>
+								</li>
+							</ul>
+							<ul class="account-service-list2">
+								<li>
+									<a href="#">商户</a>
+								</li>
+								<li>
+									<a href="#">合作招商</a>
+								</li>
+								<li>
+									<a href="#">京东商学院</a>
+								</li>
+								<li>
+									<a href="#">商家后台</a>
+								</li>
+								<li>
+									<a href="#">京麦工作台</a>
+								</li>
+								<li>
+									<a href="#">商家帮忙</a>
+								</li>
+								<li>
+									<a href="#">规则平台</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id="jd-site">
+						<a href="#">网页导航</a>
+						<i class="iconfont">&#xe610;</i>
+						<span id="spacer"></span>
+						<div id="site_map">
+							<dl class="site_map_list site_map_list1">
+								<dt>特色主题</dt>
+								<dd>
+									<ul>
+										<li><a href="">京东试用</a></li>
+										<li><a href="">京东金融</a></li>
+										<li><a href="">全球售</a></li>
+										<li><a href="">国际站</a></li>
+										<li><a href="">京东会员</a></li>
+										<li><a href="">京东预售</a></li>
+										<li><a href="">买什么</a></li>
+										<li><a href="">俄语站</a></li>
+										<li><a href="">装机大师</a></li>
+										<li><a href="">0元测评</a></li>
+										<li><a href="">定期送</a></li>
+										<li><a href="">港澳售</a></li>
+										<li><a href="">优惠券</a></li>
+										<li><a href="">秒杀</a></li>
+										<li><a href="">闪购</a></li>
+										<li><a href="">印尼站</a></li>
+										<li><a href="">京东金融科技</a></li>
+										<li><a href="">In货推荐</a></li>
+										<li><a href="">陪伴计划</a></li>
+										<li><a href="">出海招商</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="site_map_list site_map_list2">
+								<dt>行业频道</dt>
+								<dd>
+									<ul>
+										<li><a href="">手机</a></li>
+										<li><a href="">智能数码</a></li>
+										<li><a href="">玩3C</a></li>
+										<li><a href="">电脑办公</a></li>
+										<li><a href="">家用智能</a></li>
+										<li><a href="">京东智能</a></li>
+										<li><a href="">服装城</a></li>
+										<li><a href="">美装馆</a></li>
+										<li><a href="">家装城</a></li>
+										<li><a href="">母婴</a></li>
+										<li><a href="">食品</a></li>
+										<li><a href="">运动户外</a></li>
+										<li><a href="">衣资频道</a></li>
+										<li><a href="">整车</a></li>
+										<li><a href="">图书</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="site_map_list site_map_list2">
+								<dt>生活服务</dt>
+								<dd>
+									<ul>
+										<li><a href="">京东众筹</a></li>
+										<li><a href="">白条</a></li>
+										<li><a href="">京东金融App</a></li>
+										<li><a href="">京东小金库</a></li>
+										<li><a href="">理财</a></li>
+										<li><a href="">京东微联</a></li>
+										<li><a href="">话费</a></li>
+										<li><a href="">水电煤</a></li>
+										<li><a href="">彩票</a></li>
+										<li><a href="">旅行</a></li>
+										<li><a href="">机票酒店</a></li>
+										<li><a href="">电影票</a></li>
+										<li><a href="">京东到家</a></li>
+										<li><a href="">京东众测</a></li>
+										<li><a href="">游戏</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="site_map_list site_map_list2">
+								<dt>更多精选</dt>
+								<dd>
+									<ul>
+										<li><a href="">合作招商</a></li>
+										<li><a href="">京东通信</a></li>
+										<li><a href="">京东E卡</a></li>
+										<li><a href="">企业采购</a></li>
+										<li><a href="">服务市场</a></li>
+										<li><a href="">办公生活馆</a></li>
+										<li><a href="">乡村招募</a></li>
+										<li><a href="">校园加盟</a></li>
+										<li><a href="">京友邦</a></li>
+										<li><a href="">京东社区</a></li>
+										<li><a href="">智能社区</a></li>
+										<li><a href="">游戏社区</a></li>
+										<li><a href="">知识产权维护</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li id="JD-mobile">
+						<a href="#">手机京东</a>
+						<div class="mobile_static">
+							<img src="images/img_jiao.jpg" id="jiao" />
+							<div class="mobile_static_QR_code"></div>							
+						</div>
+						<div class="mobile_pop" id="mobile_pop">
+							<div class="mobile_pop_item">
+								 <div class="mobile_pop_item_qrcode">
+								 	<img src="images/qr-jd01.png">								 	
+								 </div>
+								 <div class="mobile_pop_info">
+								 	<h5>
+								 		<a href="">手机京东</a>
+								 	</h5>
+								 	<p>新人专享大礼包</p>
+								 	<p class="mobile_pop_device">
+								 		<a  href="#"></a>
+								 		<a  href="#"></a>
+								 		<a href="#"></a>
+								 	</p>
+								 </div> 
+							</div>
+							
+							<div class="mobile_pop_item">
+								 <div class="mobile_pop_item_qrcode">
+								 	<img src="images/qr-jd02.jpg">								 	
+								 </div>
+								 <div class="mobile_pop_info">
+								 	<h5>
+								 		<a href="">关注京东微信</a>
+								 	</h5>
+								 	<p>微信扫一扫关注</p>
+								 	<p>新粉最高180元</p>
+								 	<p>惊喜礼包</p>
+								 </div> 
+							</div>
+							<div class="mobile_pop_item">
+								 <div class="mobile_pop_item_qrcode">
+								 	<img src="images/qr-jd01.png">								 	
+								 </div>
+								 <div class="mobile_pop_info">
+								 	<h5>
+								 		<a href="">京东金融客户端</a>
+								 	</h5>
+								 	<p class="mobile_pop_value">新人专享大礼包</p>
+								 	<p class="mobile_pop_device">
+								 		<a  href="#"></a>
+								 		<a  href="#"></a>
+								 	</p>
+								 </div> 
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--nav-->
+		<div id="header-wapper">
+			<div id="header">
+				<div class="logo">
+					<h1>
+						<a href="#">京东</a>
+					</h1>
+				</div>
+				<div id="search_div">
+					<form action="" method="">
+						
+						<input type="text" placeholder="钢笔"/>
+						<button><i class="iconfont soutu-btn">&#xe634;</i></button>
+						<i class="iconfont search">&#xe606;</i>
+					</form>
+					<div class="shop_cart">
+						<i class="iconfont" style="color:#f10215 ;">&#xe600;</i>
+						<a href="#">我的购物车</a>
+						<span id="shop_num">
+							0
+						</span>
+					</div>
+				</div>
+				<div id="hot-word">
+					<a href="#" style="color: #f10215;;">满199减100</a>
+					<a href="#">小米MIX2</a>
+					<a href="#">秋波农资</a>
+					<a href="#">奢侈品箱包</a>
+					<a href="#">预约省800</a>
+					<a href="#">无损播放器</a>
+					<a href="#">面包机</a>
+					<a href="#">采棉节</a>
+				</div>
+				
+				<div id="navitems">
+					
+        			<ul id="navitems-group1">
+						<li class="fore1">
+							<a href="#">秒杀</a>
+						</li>
+						<li class="fore2">
+							<a href="#">优惠券</a>
+						</li>
+						<li class="fore3">
+							<a href="#">闪购</a>
+						</li>
+						<li class="fore4">
+							<a href="#">拍卖</a>
+						</li>
+					</ul>
+		
+        			<div class="spacer"></div>
+        			
+		        	<ul id="navitems-group2">
+						<li class="fore1">
+							<a href="#">服装城</a>
+						</li>
+						<li class="fore2">
+							<a href="#">京东超市</a>
+						</li>
+						<li class="fore3">
+							<a href="#">生鲜</a>
+						</li>
+						<li class="fore4">
+							<a  href="#">全球购</a>
+						</li>
+					</ul>
+		
+        			<div class="spacer"></div>
+        			
+		        	<ul id="navitems-group3">
+						<li class="fore1">
+							<a href="#">京东金融</a>
+						</li>
+					</ul>
+		
+                    
+				</div>
+				<div id="treasure">
+					<a href="#"></a>
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+		<div id="banner-wapper">
+			<div id="banner">
+				<a href="#" id="left-banner">
+					<img src="images/left_banner.png" />
+				</a>
+				<div class="J_nav">
+					<ul class="J_nav_content" id="j_nav_content">
+						
+                		<li>
+                            <a href="#">家用电器</a>
+                            <div class="nav_content_pop content_pop01">
+                            	家电说：
+                            	内容太多啦！眼睛都写迷糊了！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">手机</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">运营商</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">数码</a>
+				            <div class="nav_content_pop content_pop02">
+                            	数码说：
+                            	内容太多啦！数码暴龙兽进化！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">电脑</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">办公</a>
+				            <div class="nav_content_pop content_pop03">
+                            	办公说：
+                            	内容太多啦！我都想罢工了 ！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">家居</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">家具</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">家装</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">厨具</a>
+				            <div class="nav_content_pop content_pop04">
+                            	家具说：
+                            	内容太多啦！你今天没饭吃了！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">男装</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">女装</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">童装</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">内衣</a>
+				            <div class="nav_content_pop content_pop05">
+                            	衣装说：
+                            	内容太多啦！衣服还是得买！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">美妆个护</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">宠物</a>
+				            <div class="nav_content_pop content_pop06">
+                            	宠物说：
+                            	内容太多啦！今天心情不太好！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">女鞋</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">箱包</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">钟表</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">珠宝</a>
+				            <div class="nav_content_pop content_pop07">
+                            	珠宝说：
+                            	内容太多啦！我都失去光泽了！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">男鞋</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">运动</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">户外</a>
+				            <div class="nav_content_pop content_pop08">
+                            	运动说：
+                            	内容太多啦！我快跑不动了！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">汽车</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">汽车用品</a>
+				            <div class="nav_content_pop content_pop09">
+                            	汽车说：
+                            	内容太多啦！我都要抛锚了！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">母婴</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">玩具乐器</a>
+				            <div class="nav_content_pop content_pop10">
+                            	母婴说：
+                            	内容太多啦！宝宝都在哭了！
+                            </div>
+                        </li>
+              			<li>
+                            <a href="#">食品</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">酒类</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">生鲜</a>
+				            <span class="cate_menu_line">/</span> 
+				            <a href="#">特产</a>
+				            <div class="nav_content_pop content_pop11">
+                            	食品说：
+                            	内容太多啦！我都快要发霉了！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">礼品鲜花</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">农资绿植</a>
+				            <div class="nav_content_pop content_pop12">
+                            	花儿说：
+                            	内容太多啦！今天心情不太好！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">医药保健</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">计生情趣</a>
+				            <div class="nav_content_pop content_pop13">
+                            	保健说：
+                            	内容太多啦！送你个大保健！
+                            </div>
+                        </li>
+                		<li>
+                            <a href="#">图书</a>
+				            <span class="cate_menu_line">/</span> 
+				            <a href="#">音像</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">电子书</a>
+				            <div class="nav_content_pop content_pop14">
+                            	图书说：
+                            	内容太多啦！想静静的看看书！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">机票</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">酒店</a>
+				            <span class="cate_menu_line">/</span> 
+				            <a href="#">旅游</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">生活</a>
+				            <div class="nav_content_pop content_pop15">
+                            	机票说：
+                            	内容太多啦！我买不到票了！
+                            </div>
+                        </li>
+               			<li>
+                            <a href="#">理财</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">众筹</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">白条</a>
+				            <span class="cate_menu_line">/</span>
+				            <a href="#">保险</a>
+				            <div class="nav_content_pop content_pop16">
+                            	理财说：
+                            	内容太多啦！股票开始暴跌了！
+                            </div>
+                        </li>
+            
+					</ul>
+				</div>
+				
+				<div class="J_slider">
+					<div class="slidershow" id="slidershow">
+						<ul class="slidershow_list" id="slidershow_list">							
+							<li style="opacity: 1;">
+								<img src="images/banner01.jpg" />
+							</li>
+							<li>
+								<img src="images/banner02.jpg" />
+							</li>
+							<li>
+								<img src="images/banner03.jpg" />
+							</li>
+							<li>
+								<img src="images/banner04.jpg" />
+							</li>
+							<li>
+								<img src="images/banner05.jpg" />
+							</li>
+							<li>
+								<img src="images/banner06.jpg" />
+							</li>
+							<li>
+								<img src="images/banner07.jpg" />
+							</li>
+							<li>
+								<img src="images/banner08.jpg" />
+							</li>							
+						</ul>
+						<div class="slidershow_control_left"><i class="iconfont left">&#xe61f;</i></div>
+						<div class="slidershow_control_right"><i class="iconfont right">&#xe605;</i></div>
+						<div class="slidershow_indicator">
+							<ul id="slidershow_indicator_list">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="J_slider_bottom">
+						<a href="#">
+							<img src="images/guoqin.jpg" />
+						</a>
+						<a href="#">
+							<img src="images/foot_.png" />
+						</a>
+					</div>
+					
+				</div>
+			
+			
+				<div class="J_right">
+					<div class="user">
+						<div class="user_info">
+							<div class="user_info_logo">
+								<img  src="images/no_login.jpg">
+								<a href="#"></a>
+							</div> 
+							<div class="user_info_show">
+								<p class="user_info_tip">Hi，欢迎来到京东！</p>
+								<p>
+									<a href="#" class="user_info_login">登录</a>
+									<a href="#" class="user_info_reg">注册</a>
+								</p>
+							</div>
+						</div>
+						<div class="user_profit">
+							<a href="#">新人福利</a>
+							<a href="#">PLUS会员</a>
+						</div>
+					</div>
+							
+					<div class="news">
+						<div class="news_tab">
+							<div class="new_tab_head">								
+     							<a href="#" class="new_tab_head_01">促销</a>
+     							<a href="#" class="new_tab_head_02">公告</a>							 
+							    <a href="#" class="new_tab_head_more">更多</a>  
+							    <span class="new_tab_active" id="new_tab_active"></span>
+							</div>
+							<div class="new_tab_content">
+								<div class="new_tab_content_01"style="display: none;">
+									<ul class="new_list">
+										<li>
+											<a href="#">嗦粉节！为信仰低至6折</a>
+										</li>
+										<li>
+											<a href="#">品质家纺跨店2件8折</a>
+										</li>
+										<li>
+											<a href="#">家纺自营满199减100</a>
+										</li>
+										<li>
+											<a href="#">万件好物一元秒</a>
+										</li>
+									</ul>
+								</div>
+								<div class="new_tab_content_02">
+									<ul class="new_list">
+										<li>
+											<a href="#">京东扶贫频道正式上线运营</a>
+										</li>
+										<li>
+											<a href="#">京东全球售升级  新域名同步启用</a>
+										</li>
+										<li>
+											<a href="#">京东会员体系全新升级</a>
+										</li>
+										<li>
+											<a href="#">《京东隐私政策》修改公告</a>
+										</li>
+									</ul>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				
+					<div class="servic">
+						<div class="servic_content">
+							<ul class="servic_list">
+								<li>
+									<a href="">
+										<span class="service_corner">
+											<i class="service_corner_txt">惠</i>
+											<i class="service_corner_ico"></i>
+										</span>
+										<i class="servic_img"></i>
+										<span class="servic_text">话费</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">机票</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">酒店</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">游戏</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">企业购</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">加油卡</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">电影票</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span class="service_corner">
+											<i class="service_corner_txt">抢</i>
+											<i class="service_corner_ico"></i>
+										</span>
+										<i class="servic_img"></i>
+										<span class="servic_text">火车票</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">众筹</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">理财</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">礼品卡</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="servic_img"></i>
+										<span class="servic_text">白条</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+				
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
